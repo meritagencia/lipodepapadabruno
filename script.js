@@ -347,7 +347,8 @@ document.addEventListener('DOMContentLoaded', () => {
         age,
         procedure,
         location,
-        createdAt: new Date().toISOString()
+        createdAt: new Date().toISOString(),
+        page: window.location.href
       };
       try {
         localStorage.setItem('drbruno_lead', JSON.stringify(leadData));
@@ -355,16 +356,33 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn('Storage unavailable', err);
       }
 
-      // Build redirection URL to obrigado.html with parameters
-      const params = new URLSearchParams({
-        name: name,
-        procedure: procedure,
-        location: location
-      });
+      // Send to Make.com webhook
+      const webhookUrl = 'https://hook.us2.make.com/godaqoie9f0kfjdtgf8882j4ebjcybcx';
 
-      setTimeout(() => {
+      fetch(webhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(leadData)
+      })
+      .then(() => {
+        // Build redirection URL to obrigado.html with parameters
+        const params = new URLSearchParams({
+          name: name,
+          procedure: procedure,
+          location: location
+        });
         window.location.href = `obrigado.html?${params.toString()}`;
-      }, 600);
+      })
+      .catch((err) => {
+        console.warn('Webhook error:', err);
+        // Redirect anyway even if webhook fails
+        const params = new URLSearchParams({
+          name: name,
+          procedure: procedure,
+          location: location
+        });
+        window.location.href = `obrigado.html?${params.toString()}`;
+      });
     });
   }
 
