@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação Solicitada | Dr. Bruno Noronha - Cirurgião Bucomaxilofacial</title>
+  <meta name="description" content="Obrigado por solicitar sua avaliação com o Dr. Bruno Noronha. Em breve nosso time entrará em contato.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .thankyou-section {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 0 80px 0;
+      position: relative;
+    }
+
+    .thankyou-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: 60px 48px;
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+      box-shadow: var(--shadow-card), var(--shadow-gold);
+      position: relative;
+    }
+
+    .thankyou-icon-wrap {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      color: var(--black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px auto;
+      box-shadow: 0 0 40px var(--gold-glow);
+      animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .thankyou-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 2.6rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 18px;
+      line-height: 1.2;
+    }
+
+    .thankyou-title em {
+      font-style: italic;
+      color: var(--gold-light);
+    }
+
+    .thankyou-text {
+      font-size: 1.12rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 36px;
+    }
+
+    .thankyou-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+
+    .step-item {
+      background: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 20px 16px;
+    }
+
+    .step-num {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+
+    .step-item strong {
+      display: block;
+      font-size: 0.88rem;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .step-item p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    .thankyou-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .btn-whatsapp-direct {
+      background: #25D366;
+      color: #FFFFFF;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    }
+
+    .btn-whatsapp-direct:hover {
+      background: #1EBE5D;
+      box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .thankyou-card {
+        padding: 40px 24px;
+      }
+      .thankyou-steps {
+        grid-template-columns: 1fr;
+      }
+      .btn-primary, .btn-ghost {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announce-bar">
+    <div class="announce-inner">
+      <span class="announce-dot"></span>
+      <span>Dr. Bruno Noronha &middot; Cirurgião Bucomaxilofacial &middot; CRO 6334/MT</span>
+      <span class="announce-dot"></span>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header" style="position: static; background: rgba(5, 5, 5, 0.95); border-bottom: 1px solid var(--border-subtle);">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logobruno.png" alt="Dr. Bruno Noronha" class="logo-img">
+      </a>
+      <a href="index.html" class="nav-cta">
+        Voltar para a Página
+      </a>
+    </div>
+  </header>
+
+  <main class="thankyou-section">
+    <div class="container">
+      <div class="thankyou-card">
+        <div class="thankyou-icon-wrap">
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        </div>
+
+        <div class="section-eyebrow">Solicitação Confirmada</div>
+        <h1 class="thankyou-title">Avaliação Solicitada com <em>Sucesso!</em></h1>
+        
+        <p class="thankyou-text">
+          Recebemos suas informações com segurança. <strong>Em breve, o nosso time entrará em contato pelo WhatsApp</strong> para entender seus objetivos, tirar dúvidas e confirmar o melhor horário da sua avaliação com o Dr. Bruno Noronha.
+        </p>
+
+        <div class="thankyou-steps">
+          <div class="step-item">
+            <div class="step-num">01</div>
+            <strong>Dados Recebidos</strong>
+            <p>Seus dados foram encaminhados com total sigilo médico para a equipe.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-num">02</div>
+            <strong>Contato via WhatsApp</strong>
+            <p>Nossa equipe entrará em contato em breve para atendimento personalizado.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-num">03</div>
+            <strong>Agendamento</strong>
+            <p>Definição do melhor dia e horário para a sua consulta de avaliação.</p>
+          </div>
+        </div>
+
+        <div class="thankyou-actions">
+          <a id="whatsapp-direct-link" href="https://wa.me/5566981036769?text=Ol%C3%A1%2C%20Dr.%20Bruno!%20Acabei%20de%20solicitar%20minha%20avalia%C3%A7%C3%A3o%20pelo%20site%20e%20gostaria%20de%20agilizar%20o%20meu%20atendimento." target="_blank" rel="noopener noreferrer" class="btn-primary btn-whatsapp-direct">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M16 2a13.9 13.9 0 0 0-12 21L2 30l7.2-1.9A13.9 13.9 0 1 0 16 2zm0 25.5a11.5 11.5 0 0 1-5.9-1.6l-.4-.2-4.4 1.1 1.2-4.2-.3-.5A11.6 11.6 0 1 1 16 27.5zm6.4-8.6c-.3-.2-2-.9-2.3-1-.3-.2-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.2-.4.2-.7.1a8.9 8.9 0 0 1-2.6-1.6 9.8 9.8 0 0 1-1.8-2.2c-.2-.3 0-.5.1-.7l.5-.6.3-.5a.6.6 0 0 0 0-.6l-1-2.4c-.3-.7-.6-.6-.8-.6h-.7a1.4 1.4 0 0 0-1 .5 4.3 4.3 0 0 0-1.3 3.2 7.5 7.5 0 0 0 1.6 4 17.2 17.2 0 0 0 6.6 5.8c.8.3 1.4.5 1.9.7 1 .3 1.9.3 2.6.2.8-.1 2.4-1 2.7-1.9.4-.9.4-1.7.3-1.9-.1-.2-.3-.3-.7-.5z"/></svg>
+            <span>Falar Agora no WhatsApp Oficial</span>
+          </a>
+          <a href="index.html" class="btn-ghost">
+            <span>Voltar para a Página Inicial</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" style="padding: 30px 0;">
+    <div class="container footer-bottom-inner" style="justify-content: center; text-align: center;">
+      <p>&copy; 2025 Dr. Bruno Noronha &middot; CRO-MT 6334. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Personalize WhatsApp link if query parameters exist
+    const urlParams = new URLSearchParams(window.location.search);
+    const name = urlParams.get('name');
+    const procedure = urlParams.get('procedure');
+    const locationPref = urlParams.get('location');
+
+    if (name) {
+      let customMsg = `Olá, Dr. Bruno! Meu nome é ${encodeURIComponent(name)}. Acabei de solicitar minha avaliação no site`;
+      if (procedure) customMsg += ` para ${encodeURIComponent(procedure)}`;
+      if (locationPref) customMsg += ` (${encodeURIComponent(locationPref)})`;
+      customMsg += ` e gostaria de agilizar o meu atendimento.`;
+      
+      const waLink = document.getElementById('whatsapp-direct-link');
+      if (waLink) {
+        waLink.href = `https://wa.me/5566981036769?text=${customMsg}`;
+      }
+    }
+  </script>
+</body>
+</html>

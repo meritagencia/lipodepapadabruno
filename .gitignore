@@ -1,0 +1,15 @@
+# Temporary & extracted assets (not needed for production)
+extracted_assets/
+extracted_text.txt
+preview_slices/
+section_previews/
+public/images/raw_*
+page_preview.png
+assets/images/
+
+# Source PDF
+*.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
