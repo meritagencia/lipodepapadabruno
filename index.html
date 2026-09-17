@@ -699,67 +699,37 @@
 
         <!-- Idade -->
         <div class="form-group">
-          <label class="form-label">Sua Faixa Etária <span class="required">*</span></label>
-          <div class="radio-grid age-grid">
-            <label class="radio-card">
-              <input type="radio" name="age" value="18 a 24 anos" required>
-              <span class="radio-pill">18 a 24 anos</span>
-            </label>
-            <label class="radio-card">
-              <input type="radio" name="age" value="25 a 34 anos">
-              <span class="radio-pill">25 a 34 anos</span>
-            </label>
-            <label class="radio-card">
-              <input type="radio" name="age" value="35 a 44 anos">
-              <span class="radio-pill">35 a 44 anos</span>
-            </label>
-            <label class="radio-card">
-              <input type="radio" name="age" value="45 a 59 anos">
-              <span class="radio-pill">45 a 59 anos</span>
-            </label>
-            <label class="radio-card">
-              <input type="radio" name="age" value="60+ anos">
-              <span class="radio-pill">60+ anos</span>
-            </label>
-          </div>
+          <label for="lead-age" class="form-label">Sua Faixa Etária <span class="required">*</span></label>
+          <select id="lead-age" name="age" class="form-input" required>
+            <option value="" disabled selected>Selecione sua idade</option>
+            <option value="18 a 24 anos">18 a 24 anos</option>
+            <option value="25 a 34 anos">25 a 34 anos</option>
+            <option value="35 a 44 anos">35 a 44 anos</option>
+            <option value="45 a 59 anos">45 a 59 anos</option>
+            <option value="60+ anos">60+ anos</option>
+          </select>
         </div>
 
         <!-- Procedimento / Principal Queixa -->
         <div class="form-group">
-          <label class="form-label">Principal Queixa / Procedimento de Interesse <span class="required">*</span></label>
-          <div class="radio-grid procedure-grid">
-            <label class="radio-card">
-              <input type="radio" name="procedure" value="Gordura em baixo do queixo (queixo duplo)" checked required>
-              <span class="radio-pill">Gordura em baixo do queixo (queixo duplo)</span>
-            </label>
-            <label class="radio-card">
-              <input type="radio" name="procedure" value="Face derretida">
-              <span class="radio-pill">Face derretida</span>
-            </label>
-            <label class="radio-card">
-              <input type="radio" name="procedure" value="Excesso de Pele">
-              <span class="radio-pill">Excesso de Pele</span>
-            </label>
-            <label class="radio-card">
-              <input type="radio" name="procedure" value="Rosto Envelhecido">
-              <span class="radio-pill">Rosto Envelhecido</span>
-            </label>
-          </div>
+          <label for="lead-procedure" class="form-label">Principal Queixa / Procedimento <span class="required">*</span></label>
+          <select id="lead-procedure" name="procedure" class="form-input" required>
+            <option value="" disabled selected>Selecione o procedimento</option>
+            <option value="Gordura em baixo do queixo (queixo duplo)">Gordura em baixo do queixo (queixo duplo)</option>
+            <option value="Face derretida">Face derretida</option>
+            <option value="Excesso de Pele">Excesso de Pele</option>
+            <option value="Rosto Envelhecido">Rosto Envelhecido</option>
+          </select>
         </div>
 
         <!-- Local da Consulta -->
         <div class="form-group">
-          <label class="form-label">Preferência do Local da Consulta <span class="required">*</span></label>
-          <div class="radio-grid location-grid-pills">
-            <label class="radio-card">
-              <input type="radio" name="consultation_location" value="Presencial em Rondonópolis" checked required>
-              <span class="radio-pill">📍 Presencial em Rondonópolis</span>
-            </label>
-            <label class="radio-card">
-              <input type="radio" name="consultation_location" value="Avaliação online">
-              <span class="radio-pill">💻 Avaliação online</span>
-            </label>
-          </div>
+          <label for="lead-location" class="form-label">Preferência do Local da Consulta <span class="required">*</span></label>
+          <select id="lead-location" name="consultation_location" class="form-input" required>
+            <option value="" disabled selected>Selecione o local</option>
+            <option value="Presencial em Rondonópolis">📍 Presencial em Rondonópolis</option>
+            <option value="Avaliação online">💻 Avaliação online</option>
+          </select>
         </div>
 
         <button type="submit" class="btn-primary btn-submit" id="btn-submit-form">
