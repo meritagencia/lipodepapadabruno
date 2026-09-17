@@ -1827,6 +1827,20 @@ select.form-input option {
   min-width: 0;
 }
 
+.carousel-img {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.4s ease;
+}
+
+.carousel-img:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-card), var(--shadow-gold);
+}
+
 .carousel-prev,
 .carousel-next {
   display: none;
