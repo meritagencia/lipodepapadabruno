@@ -357,7 +357,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       // Send to Make.com webhook
-      const webhookUrl = 'https://hook.eu1.make.com/a1v3c27kj5k0svcf9maifoz58n2c5tg5';
+      const webhookUrl = 'https://hook.eu1.make.com/yu6u7m8cevg8h1v3khestu9a98dcaz2v';
 
       fetch(webhookUrl, {
         method: 'POST',
